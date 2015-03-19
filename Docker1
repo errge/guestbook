@@ -1,0 +1,6 @@
+FROM debian
+RUN useradd -m -g users webapp
+ADD src /home/webapp/guestbook
+RUN chown -R webapp. /home/webapp/guestbook
+USER webapp
+WORKDIR /home/webapp/guestbook
