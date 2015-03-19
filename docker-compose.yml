@@ -1,0 +1,8 @@
+app:
+  build: .
+  links:
+   - mongo
+  ports:
+   - "80:8082"
+mongo:
+  build: mongo

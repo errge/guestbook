@@ -19,4 +19,4 @@ ADD src /home/webapp/guestbook
 RUN chown -R webapp. /home/webapp/guestbook
 USER webapp
 WORKDIR /home/webapp/guestbook
-CMD exec ./index.py
+CMD sleep 10 && exec ./index.py
